@@ -1,0 +1,100 @@
+/* ------ MAIN----- */
+.contenido-principal-index{
+    padding-top: 50px;
+}
+
+.main1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main1 h1{
+    font-size: 50px;
+}
+
+.main1 h2{
+    font-size: small;
+    font-style: oblique;
+    color: rgb(223, 161, 118);
+}
+
+.main1 .article-index-1{
+    margin: 5px;
+    padding: 5px;
+}
+
+.main2{
+    display: flex;
+    margin: 1.2rem;
+    justify-content: space-around;
+}
+
+.main2 p{
+    font-size: 15px;
+    margin: 10px;
+}
+
+.main3 img{
+    width: 320px;
+    height: 300px;
+}
+
+@media (min-width: 321px){
+    .main3{
+        margin: 1.2rem;
+        img{
+        height: 100%;
+        width: 100%;
+    }
+}
+}
+
+@media (min-width: 769px){
+    .main1 h1{
+        font-size: 80px;
+    }
+    
+    .main1 h2{
+        font-size: 50px;
+    }
+
+    .main1 h3{
+        font-size: 70px;
+    }
+    
+    .main1 .article-index-1{
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .main2 p{
+        font-size: 25px;
+        margin: 10px;
+    }
+
+    .contenido-principal-index {  
+        padding-top: 0px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        ". . . ."
+        "main1 main1 main3 main3"
+        "main1 main1 main3 main3"
+        "main2 main2 main3 main3";
+    }
+    
+    .main1 { 
+        grid-area: main1; 
+    }
+    
+    .main3 { 
+        grid-area: main3; 
+    }
+    
+    .main2 { 
+        grid-area: main2; 
+    }
+}

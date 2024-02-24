@@ -2,19 +2,16 @@
   margin: 0;
   padding: 0;
   background-color: #171614;
-  text-decoration-color: black; }
+  text-decoration-color: black;
+  list-style: none;
+  font-family: sans-serif; }
 
 article {
-  /* border: 1px solid black; */
   margin: 20px;
   padding: 10px;
-  /* background-color: bisque; */
   color: #ffffff; }
 
 h1 {
-  /* background-color: #9A8873; */
-  /* padding: 10px;
-    text-align: center; */
   color: #ffffff;
   font-weight: 900;
   line-height: 1.1;
@@ -35,7 +32,6 @@ p {
   text-align: center;
   color: #ffffff; }
 
-/*------------------------- INDEX.HTML---------------------------------------------*/
 /* ------ NAV----- */
 .navegacion {
   background-color: #A49E9E; }
@@ -46,6 +42,10 @@ p {
   padding: 3px;
   margin: auto;
   border-bottom: solid #423e3e; }
+
+@media (min-width: 765px) {
+  .navegacion ul {
+    justify-content: space-evenly; } }
 
 /* ------ MAIN----- */
 .contenido-principal-index {
@@ -61,7 +61,9 @@ p {
   font-size: 50px; }
 
 .main1 h2 {
-  font-size: small; }
+  font-size: small;
+  font-style: oblique;
+  color: #dfa176; }
 
 .main1 .article-index-1 {
   margin: 5px;
@@ -69,15 +71,49 @@ p {
 
 .main2 {
   display: flex;
-  margin: 1.2rem; }
+  margin: 1.2rem;
+  justify-content: space-around; }
 
 .main2 p {
   font-size: 15px;
   margin: 10px; }
 
 .main3 img {
-  width: 375px;
+  width: 320px;
   height: 300px; }
+
+@media (min-width: 321px) {
+  .main3 {
+    margin: 1.2rem; }
+    .main3 img {
+      height: 100%;
+      width: 100%; } }
+
+@media (min-width: 769px) {
+  .main1 h1 {
+    font-size: 80px; }
+  .main1 h2 {
+    font-size: 50px; }
+  .main1 h3 {
+    font-size: 70px; }
+  .main1 .article-index-1 {
+    margin: 5px;
+    padding: 5px; }
+  .main2 p {
+    font-size: 25px;
+    margin: 10px; }
+  .contenido-principal-index {
+    padding-top: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: ". . . ." "main1 main1 main3 main3" "main1 main1 main3 main3" "main2 main2 main3 main3"; }
+  .main1 {
+    grid-area: main1; }
+  .main3 {
+    grid-area: main3; }
+  .main2 {
+    grid-area: main2; } }
 
 /* ------ FOOTER----- */
 .footer p {
@@ -89,36 +125,16 @@ p {
   justify-content: space-evenly; }
 
 /*------------------------- CONTACT.HTML---------------------------------------------*/
+main h1 {
+  text-align: center;
+  color: white; }
+
+a {
+  text-decoration: none; }
+
 .section-contact .image-big img {
   width: 100%;
   height: 100%; }
-
-.Formulario-contacto {
-  display: flex; }
-
-.Formulario-contacto form {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%; }
-
-.parrafo-contacto {
-  margin-top: 5px;
-  margin-left: 0;
-  display: flex; }
-
-.parrafo-contacto .mensaje {
-  padding-right: -5px; }
-
-.Formulario-contacto form p label {
-  padding-right: 10px; }
-
-.Formulario-contacto form p label {
-  margin: auto; }
-
-.div-contacto-parrafo {
-  display: flex;
-  justify-content: center; }
 
 /*------------------------- ABOUT-ME.HTML---------------------------------------------*/
 .section-about-me .image-big img {
@@ -137,44 +153,3 @@ p {
 
 /* Estrategia Responsive = Mobile First = MIN WIDTH*/
 /* INDEX */
-@media (min-width: 321px) {
-  .section-index .image-big img {
-    width: 100%; } }
-
-@media (min-width: 765px) {
-  .seccion-index {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "index1 index1 index2" "index1 index1 index3"; }
-  .index1 {
-    grid-area: index1; }
-  .index2 {
-    grid-area: index2; }
-  .index3 {
-    grid-area: index3; }
-  .navegacion ul {
-    justify-content: space-evenly; } }
-
-/* .main2 img{
-    width: 75%;
-    padding-left: 10%;
-}
-
-.contenido-principal-index {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-    ". . . ."
-    "main1 main1 main3 main3"
-    "main1 main1 main3 main3"
-    "main2 main2 . .";
-}
-
-.main1 { grid-area: main1; }
-
-.main3 { grid-area: main3; }
-
-.main-2 { grid-area: main2; }
-
-/* ------ CONTACT.HTML----- */
