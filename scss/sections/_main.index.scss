@@ -11,7 +11,7 @@
 }
 
 .main1 h1{
-    font-size: 50px;
+    font-size: 45px;
 }
 
 .main1 h2{
@@ -53,15 +53,15 @@
 
 @media (min-width: 769px){
     .main1 h1{
-        font-size: 80px;
+        font-size: 55px;
     }
     
     .main1 h2{
-        font-size: 50px;
+        font-size: 30px;
     }
 
     .main1 h3{
-        font-size: 70px;
+        font-size: 40px;
     }
     
     .main1 .article-index-1{
@@ -78,7 +78,7 @@
         padding-top: 0px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        // grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-areas:
         ". . . ."
         "main1 main1 main3 main3"
@@ -96,5 +96,19 @@
     
     .main2 { 
         grid-area: main2; 
+    }
+}
+
+@media (min-width: 1024px){
+    .main1 h1{
+        font-size: 70px;
+    }
+    
+    .main1 h2{
+        font-size: 50px;
+    }
+
+    .main1 h3{
+        font-size: 60px;
     }
 }

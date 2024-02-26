@@ -13,7 +13,14 @@
 
 
 @media (min-width: 765px){
-.navegacion ul{
+.navegacion 
+    ul{
     justify-content: space-evenly;
+
+
 }
+    a:hover{
+        background-color: rgba(170, 169, 169, 0.438);
+        transition: background-color 0.5s;
+    }
 }
