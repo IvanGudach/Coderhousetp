@@ -3,6 +3,7 @@
 @import './sections/main.index';
 @import './sections/footer';
 @import './sections/contacto-main';
+@import './sections/reviews';
 
 /*------------------------- ABOUT-ME.HTML---------------------------------------------*/
 
@@ -10,14 +11,6 @@
     width: 100%;
     height: 100%;
 }
-
-/*------------------------- REVIEWS.HTML---------------------------------------------*/
-
-.section-reviews .image-big img{
-    width: 100%;
-    height: 100%;
-}
-
 /*------------------------- COURSES.HTML---------------------------------------------*/
 
 .section-courses .image-big img{

@@ -24,3 +24,9 @@
     b. npm run watch-css
 
 //FIN   
+
+# Comandos GITHUB
+
+1. Git add .
+2. Git commit -m "Titulo"
+3. Git push

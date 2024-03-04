@@ -34,6 +34,7 @@
 .main2 p{
     font-size: 15px;
     margin: 10px;
+    border: 2px solid;
 }
 
 .main3 img{
@@ -70,7 +71,7 @@
     }
 
     .main2 p{
-        font-size: 25px;
+        font-size: 29px;
         margin: 10px;
     }
 
@@ -96,6 +97,7 @@
     
     .main2 { 
         grid-area: main2; 
+        
     }
 }
 
@@ -111,4 +113,12 @@
     .main1 h3{
         font-size: 60px;
     }
+
+    .main2 p{
+        font-size: 35px;
+        margin: 10px;
+        padding: 10px;
+    }
+
+
 }
