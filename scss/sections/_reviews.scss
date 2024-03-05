@@ -1,5 +1,6 @@
 /*------------------------- REVIEWS.HTML---------------------------------------------*/
 
+
 .carta-container{
     display: flex;
     justify-content: center;
@@ -12,7 +13,6 @@
 .carta{
     width: 325px;
     border-radius: 10px;
-    // box-shadow: 0px 2px 4px rgba(0,0,0, 0.3);
     overflow: hidden;
     background-color: #f4f4f4;
     img{
@@ -20,8 +20,6 @@
         height: auto;
         object-fit: cover;
     }
-    
-    
 }
 
 .contenedor-carta{
