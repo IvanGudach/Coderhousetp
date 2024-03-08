@@ -192,9 +192,55 @@ a {
   background-color: #f4f4f4; }
 
 /*------------------------- ABOUT-ME.HTML---------------------------------------------*/
-.section-about-me .image-big img {
+h1 {
+  padding: 20px;
+  font-size: 60px; }
+
+.contenido article h2 {
+  padding-bottom: 10px;
+  font-size: 50px; }
+
+.contenido article p {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 21px; }
+
+.img-avatar-aboutme {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .img-avatar-aboutme img {
+    width: 80%;
+    height: 80%;
+    border: solid white 3px;
+    padding: 10px; }
+
+.caja-icons {
+  padding: 20px;
+  border: 2px solid white; }
+  .caja-icons ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+
+.imagenranking {
   width: 100%;
-  height: 100%; }
+  padding-top: 20px; }
+
+@media (min-width: 1024px) {
+  .contenido {
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "img-avatar-aboutme subcontenido subcontenido" "img-avatar-aboutme subcontenido subcontenido" "img-avatar-aboutme subcontenido subcontenido"; }
+  .img-avatar-aboutme {
+    grid-area: img-avatar-aboutme;
+    height: 1200px; }
+  .subcontenido {
+    grid-area: subcontenido; }
+    .subcontenido a img {
+      height: 45%; } }
 
 /*------------------------- COURSES.HTML---------------------------------------------*/
 .section-courses .image-big img {
