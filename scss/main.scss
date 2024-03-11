@@ -5,14 +5,4 @@
 @import './sections/contacto-main';
 @import './sections/reviews';
 @import './sections/aboutme';
-
-/*------------------------- COURSES.HTML---------------------------------------------*/
-
-.section-courses .image-big img{
-    width: 100%;
-    height: 100%;
-}
-
-/* Estrategia Responsive = Mobile First = MIN WIDTH*/
-
-/* INDEX */
+@import './sections/courses'

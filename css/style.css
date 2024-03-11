@@ -243,9 +243,30 @@ h1 {
       height: 45%; } }
 
 /*------------------------- COURSES.HTML---------------------------------------------*/
-.section-courses .image-big img {
-  width: 100%;
-  height: 100%; }
+.titulo h1 {
+  font-size: 40px; }
 
-/* Estrategia Responsive = Mobile First = MIN WIDTH*/
-/* INDEX */
+.titulo p {
+  font-size: 20px; }
+
+.polaroid {
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: auto;
+  padding: auto; }
+  .polaroid img {
+    width: 100%; }
+
+.container {
+  text-align: center;
+  padding: 10px 20px; }
+
+@media (min-width: 1024px) {
+  .titulo h1 {
+    font-size: 80px; }
+  .titulo p {
+    font-size: 30px; }
+  .container
+p {
+    font-size: 30px;
+    padding-bottom: 20px; } }
