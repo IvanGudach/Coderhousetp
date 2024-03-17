@@ -43,36 +43,61 @@ h1{
 }
 }
 
+.skills{
+    padding: 20px;
+    border: 2px solid white;
+        ul{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+}
+}
+
 .imagenranking{
     width: 100%;
     padding-top: 20px ;
 }
 
+.footer{
+    padding-top: 20px;
+}
+
 @media (min-width: 1024px){
 
-.contenido {  
-    display: grid;
+.contenido {  display: grid;
     grid-template-columns: 1.5fr 0.5fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    // gap: 0px 0px;
-    // grid-auto-flow: row;
+    align-items: start;
     grid-template-areas:
     "img-avatar-aboutme subcontenido subcontenido"
     "img-avatar-aboutme subcontenido subcontenido"
-    "img-avatar-aboutme subcontenido subcontenido";
+    "skills skills skills";
 }
 
 .img-avatar-aboutme { 
-    grid-area: img-avatar-aboutme;
-    height: 1200px;
+    grid-area: img-avatar-aboutme; 
+    height: 1000px;
+    padding: 0;
 }
 
-.subcontenido {
+.subcontenido { 
     grid-area: subcontenido; 
     a{
         img{
-        height: 45%;
+        height: 24%;
         }
     }
+    .imagenranking{
+        width: 600px;
+        height: 300px;
+        padding-top: 20px ;
+    }
+}
+
+.skills {
+    grid-area: skills; 
+    width: 500px;
+    height: 150px;
+    margin: 0 auto;
+
 }
 }

@@ -1,5 +1,9 @@
 /*------------------------- REVIEWS.HTML---------------------------------------------*/
 
+.titulo-reviews{
+    font-size: 40px;
+}
+
 
 .carta-container{
     display: flex;
@@ -49,3 +53,10 @@
     background-color: #f4f4f4;
 }
 
+// Responsive
+
+@media (min-width: 765px){
+    .titulo-reviews{
+        font-size: 60px;
+    }    
+}

@@ -150,6 +150,9 @@ a {
   text-decoration: none; }
 
 /*------------------------- REVIEWS.HTML---------------------------------------------*/
+.titulo-reviews {
+  font-size: 40px; }
+
 .carta-container {
   display: flex;
   justify-content: center;
@@ -191,6 +194,10 @@ a {
   padding: 8px 16px;
   background-color: #f4f4f4; }
 
+@media (min-width: 765px) {
+  .titulo-reviews {
+    font-size: 60px; } }
+
 /*------------------------- ABOUT-ME.HTML---------------------------------------------*/
 h1 {
   padding: 20px;
@@ -224,23 +231,44 @@ h1 {
     justify-content: center;
     flex-wrap: wrap; }
 
+.skills {
+  padding: 20px;
+  border: 2px solid white; }
+  .skills ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+
 .imagenranking {
   width: 100%;
+  padding-top: 20px; }
+
+.footer {
   padding-top: 20px; }
 
 @media (min-width: 1024px) {
   .contenido {
     display: grid;
     grid-template-columns: 1.5fr 0.5fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "img-avatar-aboutme subcontenido subcontenido" "img-avatar-aboutme subcontenido subcontenido" "img-avatar-aboutme subcontenido subcontenido"; }
+    align-items: start;
+    grid-template-areas: "img-avatar-aboutme subcontenido subcontenido" "img-avatar-aboutme subcontenido subcontenido" "skills skills skills"; }
   .img-avatar-aboutme {
     grid-area: img-avatar-aboutme;
-    height: 1200px; }
+    height: 1000px;
+    padding: 0; }
   .subcontenido {
     grid-area: subcontenido; }
     .subcontenido a img {
-      height: 45%; } }
+      height: 24%; }
+    .subcontenido .imagenranking {
+      width: 600px;
+      height: 300px;
+      padding-top: 20px; }
+  .skills {
+    grid-area: skills;
+    width: 500px;
+    height: 150px;
+    margin: 0 auto; } }
 
 /*------------------------- COURSES.HTML---------------------------------------------*/
 .titulo h1 {
